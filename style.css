@@ -23,9 +23,9 @@ body {
     color: var(--text-primary);
     min-height: 100vh;
     overflow-x: hidden;
-    background-image:
-        radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 100% 100%, rgba(129, 140, 248, 0.1) 0%, transparent 50%);
+
+    display: flex;
+    flex-direction: column;
 }
 
 .hub-wrapper {
@@ -172,6 +172,23 @@ body {
     left: 0;
     font-size: 1.2rem;
 }
+
+.hub-footer {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    padding: 15px;
+    background-color: var(--card-bg);
+    border: 0.1px solid var(--card-border);
+    margin: 0 auto;
+    flex: 1;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
 
 /* Coloring */
 .page-php li::before {
